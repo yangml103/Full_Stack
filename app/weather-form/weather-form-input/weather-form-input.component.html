@@ -1,0 +1,9 @@
+
+
+<form [formGroup]="weatherFormGroup">
+  City: <input  formControlName="cityControl"> <!--: {{city}--><br>
+  <!--Units: <input  formControlName="unitsControl">-->
+  <button (click)="submit()" [disabled]="!weatherFormGroup.valid">Submit</button>
+</form>
+
+
